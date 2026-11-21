@@ -74,8 +74,15 @@ export default function Contact() {
                 </div>
 
                 <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm font-medium text-gray-500">
-                    <p>&copy; {new Date().getFullYear()} SynVoke. All rights reserved.</p>
+                    <div className="flex flex-col sm:flex-row items-center gap-3">
+                        <p>&copy; {new Date().getFullYear()} SynVoke. All rights reserved.</p>
+                        <span className="hidden sm:inline text-gray-200">·</span>
+                        <a href="https://acuitix.com" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition-colors font-semibold text-gray-700">
+                            Acuitix – Secure Online Exams
+                        </a>
+                    </div>
                     <div className="flex gap-6">
+                        <a href="/acuitix" className="hover:text-indigo-600 transition-colors">Our Products</a>
                         <a href="/privacy-policy" className="hover:text-indigo-600 transition-colors">Privacy Policy</a>
                         <a href="/terms-of-service" className="hover:text-indigo-600 transition-colors">Terms of Service</a>
                         <a href="/admin" className="hover:text-indigo-600 transition-colors text-gray-300">Portals</a>

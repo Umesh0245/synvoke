@@ -11,6 +11,16 @@ export interface Project {
 
 export const projects: Project[] = [
     {
+        id: "acuitix",
+        title: "Acuitix",
+        category: "EdTech · Secure Exams",
+        desc: "Acuitix is SynVoke's flagship secure online examination platform — engineered for institutions that demand zero-compromise integrity. Featuring AI-powered proctoring, real-time analytics, and a fortified student-admin interface built for enterprise-scale assessments.",
+        image: "/images/exam_portal.png",
+        websiteLink: "https://acuitix.com",
+        technologies: ["React", "Firebase", "Node.js", "WebRTC", "Socket.io", "AI Proctoring"],
+        objectives: ["Deliver tamper-proof large-scale exam delivery", "AI-driven proctoring for absolute integrity", "Real-time synchronized results and analytics"]
+    },
+    {
         id: "ai-arcade",
         title: "AI Arcade",
         category: "AI Platform",
@@ -21,14 +31,34 @@ export const projects: Project[] = [
         objectives: ["Centralize cutting-edge AI utility", "Ensure an intuitive UX for prompt generation", "Create an automated marketplace for models"]
     },
     {
-        id: "exam-portal",
-        title: "Secure Exam Portal",
-        category: "EdTech Platform",
-        desc: "A comprehensive assessment platform engineered for scale. It features dedicated, highly-secure student and admin interfaces for seamless exam creation, management, and real-time execution, ensuring absolute integrity and ease of use.",
-        image: "/images/exam_portal.png",
-        websiteLink: "https://exam-96957713-e7f90.web.app/",
-        technologies: ["React", "Firebase", "Node.js", "WebRTC", "Socket.io"],
-        objectives: ["Architect lossless large-scale assessment delivery", "Maintain absolute proctoring security levels", "Real-time socket synchronized results"]
+        id: "diligince",
+        title: "Diligince.ai",
+        category: "Industrial SaaS",
+        desc: "Plant operations intelligence platform connecting requirement governance, procurement decisions, and work execution for heavy industry. Features DICE AI for workflow-aware assistance, ERP integration (SAP, Tally), and end-to-end vendor coordination — from store check to work order closure.",
+        image: "/images/og-synvoke.jpg",
+        websiteLink: "https://www.diligince.ai/",
+        technologies: ["React", "Node.js", "PostgreSQL", "AI / DICE", "ERP Integration", "Tailwind CSS"],
+        objectives: ["Bridge the gap between ERP systems and plant floor execution", "Structured vendor engagement with full audit trail", "AI-assisted requirement and procurement workflows"]
+    },
+    {
+        id: "nexagen",
+        title: "NexaGen",
+        category: "AI · Enterprise",
+        desc: "NexaGen is an enterprise AI acceleration platform that integrates large language models into business workflows — automating documentation, intelligent search, and decision support across operations teams.",
+        image: "/images/og-synvoke.jpg",
+        websiteLink: "#",
+        technologies: ["Python", "LangChain", "React", "FastAPI", "PostgreSQL", "OpenAI"],
+        objectives: ["Embed LLM intelligence into core business ops", "Automate document generation and retrieval", "Deliver measurable ROI through AI workflow gains"]
+    },
+    {
+        id: "clara-it",
+        title: "Clara IT",
+        category: "IT Services",
+        desc: "A comprehensive IT services and managed solutions platform for growing businesses. Clara IT consolidates infrastructure management, helpdesk operations, and cloud migrations into a single, transparent service layer.",
+        image: "/images/og-synvoke.jpg",
+        websiteLink: "#",
+        technologies: ["AWS", "Azure", "Terraform", "Docker", "Node.js", "React"],
+        objectives: ["Unify IT operations under one managed platform", "Reduce infrastructure overhead for SMBs", "Enable seamless cloud migration and governance"]
     },
     {
         id: "playflux",

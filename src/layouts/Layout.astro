@@ -10,7 +10,7 @@ interface Props {
 
 const {
 	title,
-	description = "SynVoke - Premium Digital Experiences, Enterprise Backends & UI/UX Engineering",
+	description = "SynVoke – Premium digital product studio. Enterprise backends, UI/UX engineering, and founders of Acuitix, the secure online exam platform.",
 	image = "/images/og-synvoke.jpg",
 	url = "https://synvokestudio.com",
 } = Astro.props;
@@ -41,6 +41,18 @@ const {
 
 		<!-- Canonical Link -->
 		<link rel="canonical" href={url} />
+
+		<!-- Organization + Brand structured data -->
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Organization",
+		  "name": "SynVoke",
+		  "url": "https://synvoke.tech/",
+		  "email": "contact@synvoke.com",
+		  "brand": { "@type": "Brand", "name": "Acuitix", "url": "https://acuitix.com/" }
+		}
+		</script>
 
 		<title>{title}</title>
 
